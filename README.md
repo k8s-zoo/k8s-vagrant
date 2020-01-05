@@ -21,7 +21,24 @@ $ make [TARGET]
 
 - `$ make create`
 
-    This target launch the virtual machine .
+    This target launch the virtual machines of kubernetes master and node. There will be single node but you can change
+    it into [Vagrantfile](src/Vagrantfile).
+    
+    ```shell script
+      $ vagrant ssh k8s-master
+      NAME         STATUS   ROLES    AGE     VERSION
+      k8s-master   Ready    master   18m     v1.13.3
+      node-1       Ready    <none>   12m     v1.13.3
+  
+      $ ## Accessing node & master
+      $ vagrant ssh k8s-master
+      $ vagrant ssh node-1
+    ```
+
+- `$ make destroy`
+
+    This target delete the virtual machines.
+
 
 ## Overview
 
