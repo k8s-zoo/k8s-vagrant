@@ -1,4 +1,4 @@
-# k8s Vargrant
+# k8s Vagrant
 
 [Vagrant](https://www.vagrantup.com/) is an open-source software product for building and maintaining portable virtual 
 software development environments, e.g. for VirtualBox, KVM, Hyper-V, Docker, etc.

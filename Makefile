@@ -1,10 +1,11 @@
 .PHONY: validate build
+SRC_PATH:=src/
 
 validate:
-	vagrant validate
+	cd $(SRC_PATH) && vagrant validate
 
 create:
-	vagrant up --provider=virtualbox
+	cd $(SRC_PATH) && vagrant up
 
 destroy:
-	vagrant destroy -f
+	cd $(SRC_PATH) && vagrant destroy -fc
